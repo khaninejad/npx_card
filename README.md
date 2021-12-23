@@ -3,7 +3,7 @@ This my NPX card unique style to connect with me directly via console or termina
 
 👇 just hit 
 ```bash
-npx anmol
+npx payam
 ```
 And get to know me in unique style.
 
