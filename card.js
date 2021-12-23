@@ -25,7 +25,7 @@ const questions = [
             {
                 name: `Send me an ${chalk.green.bold("email")}?`,
                 value: () => {
-                    open("mailto:hi@anmolsingh.me");
+                    open("mailto:khaninejad@gmail.com");
                     console.log("\nDone, see you soon at inbox.\n");
                 }
             },
@@ -37,9 +37,9 @@ const questions = [
                         text: ' Downloading Resume',
                         spinner: cliSpinners.material,
                     }).start();
-                    let pipe = request('https://anmolsingh.me/api/resume').pipe(fs.createWriteStream('./anmol-resume.html'));
+                    let pipe = request('https://github.com/khaninejad/khaninejad/blob/main/README.md').pipe(fs.createWriteStream('./payam-khaninejad-resume.html'));
                     pipe.on("finish", function () {
-                        let downloadPath = path.join(process.cwd(), 'anmol-resume.html')
+                        let downloadPath = path.join(process.cwd(), 'payam-khaninejad-resume.html')
                         console.log(`\nResume Downloaded at ${downloadPath} \n`);
                         open(downloadPath)
                         loader.stop();
@@ -57,16 +57,16 @@ const questions = [
 ];
 
 const data = {
-    name: chalk.bold.green("             Anmol Pratap Singh"),
-    handle: chalk.white("@anmol098"),
-    work: `${chalk.white("Software Engineer at")} ${chalk
+    name: chalk.bold.green("             Payam Khaninejad"),
+    handle: chalk.white("@khaninejad"),
+    work: `${chalk.white("Developer at")} ${chalk
         .hex("#2b82b2")
-        .bold("ClearTax")}`,
-    twitter: chalk.gray("https://twitter.com/") + chalk.cyan("misteranmol"),
-    github: chalk.gray("https://github.com/") + chalk.green("anmol098"),
-    linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue("anmol098"),
-    web: chalk.cyan("https://anmolsingh.me"),
-    npx: chalk.red("npx") + " " + chalk.white("anmol"),
+        .bold("Coinhaven")}`,
+    twitter: chalk.gray("https://twitter.com/") + chalk.cyan("khaninejad"),
+    github: chalk.gray("https://github.com/") + chalk.green("khaninejad"),
+    linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue("khaninejad"),
+    web: chalk.cyan("https://khaninejad.ir"),
+    npx: chalk.red("npx") + " " + chalk.white("payam"),
 
     labelWork: chalk.white.bold("       Work:"),
     labelTwitter: chalk.white.bold("    Twitter:"),

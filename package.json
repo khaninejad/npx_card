@@ -1,14 +1,14 @@
 {
-  "name": "anmol",
-  "version": "2.1.0",
-  "description": "A personal card for Anmol Pratap Singh (@anmol098)",
+  "name": "payam",
+  "version": "1.0.0",
+  "description": "A personal card for Payam Khaninejad (@khaninejad)",
   "main": "card.js",
   "bin": {
-    "anmol": "./card.js"
+    "payam": "./card.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anmol098/npx_card.git"
+    "url": "git+https://github.com/khaninejad/npx_card.git"
   },
   "scripts": {
     "test": "node card.js",
@@ -16,12 +16,13 @@
   },
   "dependencies": {
     "boxen": "^4.2.0",
-    "chalk": "^4.1.0",
+    "chalk": "^4.1.2",
     "clear": "^0.1.0",
-    "cli-spinners": "^2.5.0",
+    "cli-spinners": "^2.6.1",
     "inquirer": "^7.3.2",
-    "open": "^7.0.4",
-    "ora": "^5.1.0",
+    "npmrc": "^1.1.1",
+    "open": "^7.4.2",
+    "ora": "^5.4.1",
     "request": "^2.88.2"
   },
   "keywords": [
@@ -32,6 +33,6 @@
     "npx card",
     "business card"
   ],
-  "author": "Anmol Singh <hi@anmolsingh.me> (https://anmolsingh.me/)",
+  "author": "Payam khaninejad <khaninejad@gmail.com> (https://khaninejad.ir/)",
   "license": "ISC"
 }
