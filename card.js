@@ -120,28 +120,8 @@ const questions = [
                 }
             },
             {
-                name: `offline ${chalk.yellowBright.bold("Interview")}?`,
-                value: () => {
-                    console.log("\nLet's meet.\n");
-                    inquirer.prompt(observe).then((answers) => {
-                        if (answers.position.includes('developer')){
-                            console.log('Hello dude,');
-                          }else if (answers.position.includes('developer')){
-                            console.log('Hello future boss :D' );
-                          }else{
-                            console.log('Hello '+ answers.first_name + ' ' + answers.last_name + ', ' );
-                          }
-                          console.log("\nNow you're going to connect with my assistant, feel free to ask anything you like.\n");
-                        userInfoDetail = answers;
-                        ask();
-                      });
-                      
-                }
-            },
-            {
                 name: `Download my ${chalk.magentaBright.bold("Resume")}?`,
                 value: () => {
-                    // cliSpinners.dots;
                     const loader = ora({
                         text: ' Downloading Resume',
                         spinner: cliSpinners.material,
